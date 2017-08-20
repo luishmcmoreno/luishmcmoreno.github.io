@@ -7,8 +7,7 @@ permalink: /resume/
 * **Email**: luishmcmoreno@gmail.com
 * **Phone number**: + 55 31 989890056
 
-I'm a frontend developer passionate about web with a solid knowledge in Javascript and I'm always concerned to learning new technologies.
-
+I'm a frontend developer passionate about the web with a solid knowledge of Javascript and I'm always concerned about learning new technologies.
 ## Skills
 
 ### Programming Languages
