@@ -6,7 +6,7 @@ tags:
   - continuous-integration
 ---
 
-Recently, I and my team were facing a problem here at Pluritech with Ionic 2+ projects. We wanted to implement environment variables like the @angular/cli projects do. Ionic projects don't handle it.
+Recently, I and my team were facing a problem here at Pluritech with Ionic 2+ projects. We wanted to implement environment variables like the @angular/cli projects do. Ionic projects doesn't handle it.
 
 By searching the web, we founded some issues at Github that the answers made it possible to do and I'll share our solution.
 
