@@ -88,7 +88,7 @@ Now, this webpack configuration will change the ``@app/env`` value to the corres
 
 ```
 
-<strong>When</strong> running with a custom variable, production builds still need --prod flag.
+<strong>Note:</strong> When running with a custom variable, production builds still need --prod flag.
 
 
 If you have any questions, feel free to comment here.
