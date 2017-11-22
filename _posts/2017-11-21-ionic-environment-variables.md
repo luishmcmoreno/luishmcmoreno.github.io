@@ -6,13 +6,13 @@ tags:
   - continuous-integration
 ---
 
-Recently, I and my team were facing a problem here at Pluritech with Ionic 2+ projects. We wanted to implement environment variables like the @angular/cli projects do. Ionic projects doesn't handle it.
+Recently, I was facing a problem here at Pluritech with Ionic 2+ projects. We wanted to implement environment variables like the @angular/cli projects do. Ionic projects doesn't handle it.
 
-By searching the web, we founded some issues at Github that the answers made it possible to do and I'll share our solution.
+By searching the web, we found some issues at Github related to this problem and we got our own solution thanks to some answers at [this thread](https://github.com/ionic-team/ionic-cli/issues/1205).
 
-First, we need to create a folder ``src/environments`` to handle the different environments there, like ``src/environments/environment.ts`` (prod environment) and ``src/environments/environment.dev.ts``. We can create as much as possible environments we want, like ``src/environments/environment.staging.ts``.
+First, we have to create a folder ``src/environments`` to handle the different environments there, like ``src/environments/environment.ts`` (prod environment) and ``src/environments/environment.dev.ts``. We can create as much as possible environments we want, like ``src/environments/environment.staging.ts``.
 
-Now, we need to handle this file with node environments. To do it, we need a trick. We'll use a typescript alias to handle which file will be used.
+Now, we'll choose the right file with node environments. To do it, we need a trick. We'll use a typescript alias to handle which file will be used.
 
 To create this alias we need to include, at ``tsconfig.json``, inside ``compilerOptions`` the following:
 
@@ -24,13 +24,13 @@ To create this alias we need to include, at ``tsconfig.json``, inside ``compiler
       ]
 ```
 
-This way, when typescript compiler found ``@app/env``, it will be swapped by ``environments/environment``, then when we need to include the environment in a file, we need to import this way:
+This way, when typescript compiler find ``@app/env``, it will be swapped by ``environments/environment``, then when we need to include the environment in a file, we have import:
 
 ```typescript
   import { env } from '@app/env';
 ```
 
-But now, we need to change this value accordingly with node envs. To do it we'll use webpack. First, create a file ``config/webpack.config.js`` and adds to our ``package.json`` the following instruction:
+But now, we need to change this value accordingly with node envs. To do it, we'll use webpack. First, create a file ``config/webpack.config.js`` and adds to our ``package.json`` the following instruction:
 
 ```json
     "config": {
@@ -40,7 +40,7 @@ But now, we need to change this value accordingly with node envs. To do it we'll
 
 Now the Ionic will know to use this new webpack configuration.
 
-To finish it, we need to type the following:
+To finish it, we need to type the code below:
 
 ```js
 var chalk = require('chalk');
@@ -78,7 +78,7 @@ module.exports = function () {
 
 ```
 
-Now, this webpack configuration will change the ``@app/env`` value to the corresponding file. To do it, we just need to include a node env to the CLI command.
+Now, this webpack configuration will change the ``@app/env`` value to the corresponding file. To do it, we just have to include a node env to the CLI command.
 
 ```bash
 
