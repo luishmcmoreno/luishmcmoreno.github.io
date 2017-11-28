@@ -102,6 +102,12 @@ I'm a frontend developer passionate about the web with a solid knowledge of Java
 
 * [**M101JS: MongoDB for Node.js Developers**](http://education.mongodb.com/downloads/certificates/f2a24b4f98764411b27c5f0e98e4ba00/Certificate.pdf?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3Bl0kkm4bYSw2w3AFuk4Ha4w%3D%3D) (MongoDB University)
 
+## Prizes
+
+* Winner - **Campus Party 2017 SP** - Hackathon "O Campo na Campus" by **John Deere**
+* Winner - **Campus Party 2017 MG** - "Hackathon Verde" by **BDMG**
+
+
 ## Hobbies
 
 * Play guitar or ukulele
