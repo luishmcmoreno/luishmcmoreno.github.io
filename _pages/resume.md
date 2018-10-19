@@ -95,8 +95,8 @@ I'm a frontend developer passionate about the web with a solid knowledge of Java
 
 ## Education
 
-* **Computational Mathematics at Universidade Federal de Minas Gerais** - January 2009 - December 2011 (Stopped)
-* **Computational Engineering at CEFET MG** - January 2012 - December 2014 (Stopped)
+* **Computational Mathematics at Universidade Federal de Minas Gerais** - January 2009 - December 2011
+* **Computational Engineering at CEFET MG** - January 2012 - December 2014
 
 ## Courses
 
@@ -106,6 +106,8 @@ I'm a frontend developer passionate about the web with a solid knowledge of Java
 
 * Winner - **Campus Party 2017 SP** - Hackathon "O Campo na Campus" by **John Deere**
 * Winner - **Campus Party 2017 MG** - "Hackathon Verde" by **BDMG**
+* Winner - **Campus Party 2018 SP** - "Experiência Contactless" by **VISA**
+* Winner - **Campus Party 2018 SP** - "CPHack" by **Campus Party Ltd**
 
 
 ## Hobbies
